@@ -10,14 +10,14 @@
 }
 
 .bread-crumbs__linc {
-	font-weight: 200;
-	color: $color-text-main;
 	margin-left: 20px;
 	text-decoration: none;
+	color: $color-text-main;
+	font-weight: 200;
 
 	&::after {
-		content: "/";
 		margin-left: 20px;
+		content: "/";
 		color: $color-text-main;
 	}
 
@@ -39,18 +39,18 @@
 }
 
 .head-pages__manu {
+	padding: 20px 0;
 	border-top: 1px solid $color-25;
 	border-bottom: 1px solid $color-25;
-	padding: 20px 0;
 }
 
 .head-pages__manu-list {
-	padding: 0;
-	margin: 0;
 	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	list-style: none;
 }
 
 .head-pages__manu-item-border {
@@ -59,13 +59,13 @@
 }
 
 .head-pages__manu-linc {
-	font-family: "Cera Pro", serif;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 25px;
+	text-decoration: none;
 	letter-spacing: 0.0015em;
 	color: $color-text-main;
-	text-decoration: none;
+	font-family: "Cera Pro", serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 25px;
 }
 
 .head-pages__manu-linc_active {

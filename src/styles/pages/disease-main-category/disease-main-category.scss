@@ -3,8 +3,8 @@
 }
 
 .disease-main-category__item {
-	grid-column: 1 / span 8;
 	margin-bottom: 100px;
+	grid-column: 1 / span 8;
 
 	&:nth-of-type(2n) {
 		grid-column: 5 / span 8;
@@ -16,24 +16,24 @@
 	color: #fff;
 
 	&::before {
-		content: "";
 		position: absolute;
+		z-index: -1;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
+		content: "";
 		background-color: rgba(0, 0, 0, 0.3);
-		z-index: -1;
 	}
 }
 
 .disease-main-category__item-img {
-	object-fit: cover;
 	position: relative;
-	height: 580px;
-	width: 100%;
 	z-index: -2;
+	width: 100%;
+	height: 580px;
 	margin-bottom: -7px;
+	object-fit: cover;
 }
 
 .disease-main-category__item-organ {
@@ -52,26 +52,26 @@
 }
 
 .disease-main-category__item-treatment-h {
-	font-family: "Cera Pro", serif;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 135%;
 	margin: 0 0 10px 0;
+	font-family: "Cera Pro", serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
 }
 
 .disease-main-category__item-treatment {
-	font-size: 20px;
 	margin-bottom: 20px;
+	font-size: 20px;
 }
 
 .disease-main-category__item-poles {
 	display: block;
-	font-family: "Cera Pro", serif;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 135%;
 	width: 284px;
 	margin-top: 40px;
 	padding-top: 20px;
 	border-top: 1px solid $color-active-light;
+	font-family: "Cera Pro", serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
 }

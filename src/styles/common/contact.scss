@@ -13,17 +13,17 @@
 }
 
 .form-bot__form-input-wrap {
-	width: 100%;
-	margin-bottom: 12px;
 	display: flex;
 	flex-direction: column-reverse;
+	width: 100%;
+	margin-bottom: 12px;
 }
 
 .form-bot__form-input-lable {
+	visibility: visible;
 	padding-left: 4px;
 	transition: 200ms ease-in-out 0ms;
 	transition-property: visibility, opacity;
-	visibility: visible;
 	opacity: 1;
 }
 
@@ -33,16 +33,16 @@
 }
 
 .form-bot__form-input {
-	font-family: "Spectral", serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 150%;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid $color-active;
 	width: 100%;
 	padding: 5px 4px;
+	border: none;
+	border-bottom: 1px solid $color-active;
+	background-color: transparent;
+	font-family: "Spectral", serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 150%;
 
 	&:invalid {
 		border-color: #ff0000;
@@ -59,15 +59,15 @@
 	}
 
 	&::placeholder {
-		font-weight: 200;
 		color: $color-text-main;
+		font-weight: 200;
 	}
 
 	&[type="textarea"] {
-		resize: vertical;
 		height: 43px;
 		min-height: 43px;
 		max-height: 400px;
+		resize: vertical;
 	}
 }
 
@@ -88,9 +88,9 @@
 	}
 
 	option {
-		font-weight: 200;
-		padding-left: 0;
 		padding-right: 0;
+		padding-left: 0;
+		font-weight: 200;
 	}
 }
 
@@ -100,8 +100,8 @@
 }
 
 .contact__map-wrap {
-	grid-column: 6 / span 8;
 	padding-left: 60px;
+	grid-column: 6 / span 8;
 }
 
 .contact__map {
@@ -111,8 +111,8 @@
 
 .contact__address-wrap {
 	display: flex;
-	justify-content: space-between;
 	font-size: 20px;
+	justify-content: space-between;
 }
 
 .contact__address,
@@ -135,9 +135,9 @@
 
 .contact__mail,
 .contact__tel {
-	color: $color-text-main;
-	text-decoration: none;
 	text-align: right;
+	text-decoration: none;
+	color: $color-text-main;
 
 	&:hover {
 		color: $color-active;

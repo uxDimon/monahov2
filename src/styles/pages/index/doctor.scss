@@ -1,32 +1,32 @@
 .doctor {
 	position: relative;
-	margin-bottom: 200px;
 	margin-top: -83px;
+	margin-bottom: 200px;
 
 	&::after {
-		content: "";
 		position: absolute;
+		z-index: -1;
 		top: 0;
 		right: calc(50% + 162px);
 		bottom: 0;
 		left: 0;
+		content: "";
 		background-color: $color-active-05;
-		z-index: -1;
 	}
 }
 
 .doctor__icon-points {
-	width: 135px;
-	height: 90px;
 	position: absolute;
 	top: 137px;
 	left: calc(50% + 545px);
+	width: 135px;
+	height: 90px;
 }
 
 .doctor__avatar {
 	position: relative;
-	margin-top: 95px;
 	height: 751px;
+	margin-top: 95px;
 	grid-column: 1 / span 7;
 }
 
@@ -38,25 +38,25 @@
 	position: absolute;
 	bottom: 60px;
 	left: 0;
-	font-family: "Cera Pro", sans-serif;
-	font-weight: bold;
-	font-size: 60px;
-	line-height: 75px;
 	letter-spacing: -0.005em;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 75px;
 }
 
 .doctor__info {
+	margin-bottom: 57px;
 	grid-column: 8 / span 5;
 	align-self: end;
-	margin-bottom: 57px;
 }
 
 .doctor__info-text {
-	font-family: "Cera Pro", sans-serif;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 135%;
 	margin: 0 0 40px 0;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
 }
 
 .doctor__info-achive-wrap {
@@ -73,18 +73,18 @@
 }
 
 .achievements__number {
-	font-family: "Cera Pro", sans-serif;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 45px;
-	margin-bottom: 5px;
 	display: block;
+	margin-bottom: 5px;
 	color: $color-active;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 45px;
 }
 
 .achievements__text {
-	font-size: 20px;
 	display: block;
+	font-size: 20px;
 }
 
 .doctor__info-button-wrap {

@@ -1,14 +1,4 @@
 :root {
-	// Цвета
-	// --color-text-main: #000;
-	// --color-grey: #fafafa;
-	// --color-white: #fff;
-	// --color-active: #0060a0;
-	// --color-active-05: rgba(62, 178, 255, 0.05);
-	// --color-active-light: rgba(0, 96, 160, 0.5);
-	// --color-hover: #0076c4;
-	// --color-25: rgba(0, 0, 0, 0.25);
-
 	// Размеры
 	--content-max-weight: 1360px;
 	--grid-columns-number: 12;
@@ -34,6 +24,7 @@ $color-25: rgba(0, 0, 0, 0.25);
 }
 
 body {
+	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	color: $color-text-main;
@@ -42,8 +33,6 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 150%;
-
-	overflow-x: hidden;
 }
 
 a {
@@ -58,15 +47,15 @@ a {
 // Заголовки
 .heading-2 {
 	font-family: "Cera Pro", serif;
-	font-weight: bold;
 	font-size: 48px;
+	font-weight: bold;
 	line-height: 60px;
 }
 
 .heading-3 {
 	font-family: "Cera Pro", serif;
-	font-weight: 500;
 	font-size: 24px;
+	font-weight: 500;
 	line-height: 135%;
 }
 
@@ -112,13 +101,13 @@ a {
 .button {
 	display: inline-flex;
 	padding: 10px 25px;
+	cursor: pointer;
 	transition: 150ms ease-in-out 0ms;
 	transition-property: color, background-color;
 	text-decoration: none;
 	letter-spacing: 0.0015em;
 	text-transform: uppercase;
 	color: $color-white;
-	cursor: pointer;
 	border: 0;
 	border-radius: 5px;
 	background-color: $color-active;
@@ -129,13 +118,13 @@ a {
 	align-items: center;
 
 	&::after {
-		content: "";
-		transition: background-color 150ms ease-in-out 0ms;
-		margin-left: 10px;
-		background-color: $color-white;
-		mask: url("../images/icons/arrow.svg") no-repeat;
 		width: 22px;
 		height: 8px;
+		margin-left: 10px;
+		content: "";
+		transition: background-color 150ms ease-in-out 0ms;
+		background-color: $color-white;
+		mask: url("../images/icons/arrow.svg") no-repeat;
 	}
 
 	&:hover {
@@ -145,17 +134,17 @@ a {
 
 .button_clear {
 	padding: 0;
-	background-color: transparent;
-	border-radius: 0;
 	color: $color-text-main;
+	border-radius: 0;
+	background-color: transparent;
 
 	&::after {
 		background-color: $color-text-main;
 	}
 
 	&:hover {
-		background-color: transparent;
 		color: $color-active;
+		background-color: transparent;
 
 		&::after {
 			background-color: $color-active;
@@ -200,13 +189,13 @@ a {
 	margin-top: 46px;
 
 	button {
-		background-color: $color-active-light;
-		border: none;
-		margin: 0 15px 0 0;
-		padding: 0;
 		width: 8px;
 		height: 8px;
+		margin: 0 15px 0 0;
+		padding: 0;
+		border: none;
 		border-radius: 8px;
+		background-color: $color-active-light;
 	}
 
 	.tns-nav-active {
@@ -216,14 +205,14 @@ a {
 
 .tns-controls {
 	button {
-		padding: 0 5px;
-		margin: 0;
-		background-color: transparent;
-		border: none;
 		display: flex;
+		height: 40px;
+		margin: 0;
+		padding: 0 5px;
+		border: none;
+		background-color: transparent;
 		align-items: center;
 		justify-content: center;
-		height: 40px;
 	}
 
 	button::before,
@@ -234,9 +223,9 @@ a {
 
 		width: $button-width;
 		height: $button-height;
+		background-color: $color-text-main;
 		mask: url("../images/icons/arrow.svg") no-repeat;
 		mask-size: $button-width $button-height;
-		background-color: $color-text-main;
 	}
 
 	button[data-controls="prev"]::before {

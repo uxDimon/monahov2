@@ -69,6 +69,7 @@
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
+	transition: colro 250ms ease-in-out 0ms;
 	letter-spacing: 0.0015em;
 	border: none;
 	background-color: transparent;
@@ -76,7 +77,6 @@
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 25px;
-	transition: colro 250ms ease-in-out 0ms;
 
 	&:hover {
 		color: $color-active;

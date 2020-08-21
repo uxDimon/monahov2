@@ -4,70 +4,70 @@
 
 .disease-page__slider-wrap {
 	position: relative;
-	grid-column: 1 / 6;
 	margin-right: -20px;
+	grid-column: 1 / 6;
 	align-self: flex-start;
 
 	.tns-controls {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		position: absolute;
+		z-index: 3;
 		top: calc(50% - 20px);
 		right: -50px;
 		left: -50px;
-		z-index: 3;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	.tns-nav {
-		margin-top: 20px;
 		display: flex;
+		margin-top: 20px;
 		justify-content: center;
 	}
 }
 
 .disease-page__slider-item {
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 	width: 100%;
 	height: 740px;
 	color: $color-white;
 }
 
 .disease-page__slider-img {
+	z-index: 1;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	z-index: 1;
 }
 
 .disease-page__slider-name {
 	position: absolute;
+	z-index: 2;
 	top: 40px;
 	left: 40px;
-	z-index: 2;
 	font-size: 20px;
 }
 
 .disease-page__slider-bot-wrap {
 	position: absolute;
+	z-index: 2;
 	bottom: 40px;
 	left: 40px;
-	z-index: 2;
 	display: flex;
 	flex-direction: column;
 }
 
 .disease-page__slider-disease {
-	font-family: "Cera Pro", serif;
-	font-weight: 500;
-	font-size: 24px;
 	margin: 0 0 20px 0;
+	font-family: "Cera Pro", serif;
+	font-size: 24px;
+	font-weight: 500;
 }
 
 .disease-page__text-wrap {
-	grid-column: 8 / 13;
 	margin-left: -20px;
+	grid-column: 8 / 13;
 }
 
 .disease-page__heading {
@@ -75,9 +75,9 @@
 }
 
 .disease-page__p {
-	font-style: 20px;
 	margin: 0 0 30px 0;
 	font-size: 20px;
+	font-style: 20px;
 }
 
 .disease-page__heading-list {
@@ -86,29 +86,29 @@
 
 .disease-page__list {
 	margin: 0;
+	margin-bottom: 30px;
 	padding: 0;
 	list-style: none;
 	counter-reset: disease-page;
-	margin-bottom: 30px;
 }
 
 .disease-page__item {
+	display: flex;
+	margin-bottom: 20px;
 	counter-increment: disease-page;
 	font-size: 20px;
-	display: flex;
 	align-items: baseline;
-	margin-bottom: 20px;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 
 	&::before {
+		margin-right: 20px;
 		content: "0" counter(disease-page);
+		letter-spacing: 0.0015em;
 		font-family: "Cera Pro", serif;
 		font-weight: normal;
 		line-height: 25px;
-		letter-spacing: 0.0015em;
-		margin-right: 20px;
 	}
 }
