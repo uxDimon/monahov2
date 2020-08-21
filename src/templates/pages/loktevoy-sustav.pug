@@ -1,0 +1,48 @@
+extends ../template
+
+block variables
+    - var title = 'Локтевой сустав'
+
+block content
+    main
+        .head-pages
+            .head-pages__bread-crumbs.bread-crumbs 
+                a(href="/").bread-crumbs__linc Главная
+                a(href="/").bread-crumbs__linc Направления
+                span.bread-crumbs__linc.bread-crumbs__your-place Локтевой сустав
+            h1.heading-2.head-pages__heading Направления
+            nav.head-pages__manu
+                ul.head-pages__manu-list
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Коленный сустав
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Плечевой сустав
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc.head-pages__manu-linc-active Локтевой сустав
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Тазобедренный сустав
+
+        .loktev.main-grid
+            .loktev__img-wrap
+                img(src="assets/images/loktev-joint-min.jpg", alt="Локтевой сустав", srcset="assets/images/loktev-joint@2x-min.jpg 2x").loktev__img
+                span.loktev__img-name Локтевой сустав
+                a(href="#").button.button_clear.loktev__img-button Записаться на приём
+
+            .loktev__text-wrap
+                .loktev__text-item
+                    a(href="#").button.button_clear.loktev__text-button Артроз
+                    p.loktev__text-text Хроническое дегенеративное заболевание, проявляющееся болью, отеком, нарушением движения в локтевом суставе и его деформацией
+                .loktev__text-item
+                    a(href="#").button.button_clear.loktev__text-button Бурсит
+                    p.loktev__text-text Возникший в тканях, окружающих локтевой отросток, воспалительный процесс
+                .loktev__text-item
+                    a(href="#").button.button_clear.loktev__text-button Эпикондилит
+                    p.loktev__text-text Воспалительное заболевание, возникающее вследствие интенсивных физических нагрузок
+                .loktev__text-item
+                    a(href="#").button.button_clear.loktev__text-button Эпикондилит
+                    p.loktev__text-text Воспалительное заболевание, возникающее вследствие интенсивных физических нагрузок
+
+            .loktev__poles-wrap
+                span.loktev__poles Безоперативные методы в приоритете
+                span.loktev__poles Современное оборудование
+                span.loktev__poles Внимание к деталям
