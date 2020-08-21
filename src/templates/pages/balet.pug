@@ -1,0 +1,55 @@
+extends ../template
+
+block variables
+    - var title = 'Балет'
+
+block content
+    main
+        .head-pages
+            .head-pages__bread-crumbs.bread-crumbs 
+                a(href="/").bread-crumbs__linc Главная
+                a(href="/").bread-crumbs__linc Виды спорта
+                span.bread-crumbs__linc.bread-crumbs__your-place Балет
+            h1.heading-2.head-pages__heading Направления
+            nav.head-pages__manu
+                ul.head-pages__manu-list
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Горнолыжный спорт
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Хоккей
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Скалолазание и альпинизм
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Лёгкая атлетика
+                    .head-pages__manu-item-border
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Тяжёлая атлетика
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Фигурное катание
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc.head-pages__manu-linc_active Балет
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Единоборства
+
+        .disease-category.main-grid
+            .disease-category__img-wrap
+                img(src="assets/images/balet-min.jpg", alt="Локтевой сустав", srcset="assets/images/balet@2x-min.jpg 2x").disease-category__img
+                span.disease-category__img-name.text-color-white Балет
+
+                a(href="#").button.button_clear.button_clear_wheat.disease-category__img-button Записаться на приём
+
+            .disease-category__text-wrap
+                .disease-category__text-item
+                    a(href="#").button.button_clear.disease-category__text-button Мануальная терапия
+                    p.disease-category__text-text Хроническое дегенеративное заболевание, проявляющееся болью, отеком, нарушением движения в локтевом суставе и его деформацией
+                .disease-category__text-item
+                    a(href="#").button.button_clear.disease-category__text-button Восстановительный массаж
+                    p.disease-category__text-text Возникший в тканях, окружающих локтевой отросток, воспалительный процесс
+                .disease-category__text-item
+                    a(href="#").button.button_clear.disease-category__text-button Кинезиотерапия
+                    p.disease-category__text-text Воспалительное заболевание, возникающее вследствие интенсивных физических нагрузок
+
+            .disease-category__poles-wrap
+                span.disease-category__poles Безоперативные методы в приоритете
+                span.disease-category__poles Современное оборудование
+                span.disease-category__poles Внимание к деталям

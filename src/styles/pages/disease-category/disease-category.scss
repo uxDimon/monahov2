@@ -3,22 +3,23 @@
 }
 
 .disease-category__img-wrap {
-	grid-column: 1 / span 6;
 	position: relative;
 	width: calc(100% + 20px);
 	height: 720px;
+	grid-column: 1 / span 6;
 }
 
 .disease-category__img {
-	object-fit: cover;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 .disease-category__img-name {
 	position: absolute;
 	top: 40px;
 	left: 40px;
+	font-size: 20px;
 }
 
 .disease-category__img-button {
@@ -28,10 +29,10 @@
 }
 
 .disease-category__text-wrap {
-	grid-column: 8 / span 4;
-	align-self: center;
 	width: calc(100% + 20px);
 	margin-left: -20px;
+	grid-column: 8 / span 4;
+	align-self: center;
 }
 
 .disease-category__text-item {
@@ -51,18 +52,18 @@
 }
 
 .disease-category__poles-wrap {
-	grid-column: 1 / span 12;
 	display: flex;
+	grid-column: 1 / span 12;
 	justify-content: space-between;
 }
 
 .disease-category__poles {
 	width: 284px;
+	margin-top: 100px;
 	padding-top: 10px;
 	border-top: 1px solid $color-active-light;
 	font-family: "Montserrat", serif;
-	font-weight: bold;
 	font-size: 20px;
+	font-weight: bold;
 	line-height: 24px;
-	margin-top: 100px;
 }
