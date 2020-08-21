@@ -7,7 +7,7 @@ html
 		title #{title}
 		meta(content="" name="description")
 		meta(content="" name="keywords")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
 		meta(content="ie=edge" http-equiv="x-ua-compatible")
 
 		//- link(rel="shortcut icon" href="assets/images/apple-touch-icon.png" type="image/x-icon")
@@ -16,6 +16,14 @@ html
 		link(rel="stylesheet" type="text/css" href="assets/styles/app.min.css")
 		
 	body
+		include components/header.pug
+
 		block content
+
+		include components/contact.pug
+		include components/footer.pug
+
+		script(src="assets/scripts/imask.min.js")
+		script(src="assets/scripts/tiny-slider.js")
 
 		script(src="assets/scripts/main.js")

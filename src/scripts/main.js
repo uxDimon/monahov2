@@ -55,7 +55,7 @@ for (const i of allSelect) {
 }
 
 // Маска для телефона
-import IMask from "imask";
+// import IMask from "imask.min.js";
 document.querySelectorAll(".phone-mask").forEach((item) => {
 	let telMask = IMask(item, {
 		mask: "+{7}(000)000-00-00",
@@ -70,8 +70,8 @@ document.querySelectorAll(".phone-mask").forEach((item) => {
 });
 
 // Слайдер https://www.npmjs.com/package/tiny-slider
-import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
-import "../node_modules/tiny-slider/src/tiny-slider.scss";
+// import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
+// import "../node_modules/tiny-slider/src/tiny-slider.scss";
 
 var injury = tns({
 	container: ".injury__slider",

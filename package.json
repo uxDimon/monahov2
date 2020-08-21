@@ -29,5 +29,9 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "imagemin-pngquant": "^9.0.0"
+  },
+  "dependencies": {
+    "imask": "^6.0.5",
+    "tiny-slider": "^2.9.3"
   }
 }
