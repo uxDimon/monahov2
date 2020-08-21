@@ -39,6 +39,10 @@ body {
 a {
 	transition: color 150ms ease-in-out 0ms;
 	color: var(--color-active);
+
+	&:hover {
+		color: var(--color-hover);
+	}
 }
 
 // Заголовки
@@ -185,6 +189,7 @@ a {
 }
 
 @import "./common/header.scss";
+@import "./common/head-pages.scss";
 
 @import "./pages/index/doctor.scss";
 @import "./pages/index/activity.scss";

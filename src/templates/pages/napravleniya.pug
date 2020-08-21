@@ -1,0 +1,23 @@
+extends ../template
+
+block variables
+    - var title = 'Направления'
+
+block content
+    main
+        .head-pages
+            .head-pages__bread-crumbs.bread-crumbs 
+                a(href="/").bread-crumbs__linc Главная
+                a(href="/").bread-crumbs__linc Направления
+                span.bread-crumbs__linc.bread-crumbs__your-place Направления
+            h1.heading-2.head-pages__heading Направления
+            nav.head-pages__manu
+                ul.head-pages__manu-list
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Коленный сустав
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Плечевой сустав
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Локтевой сустав
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Тазобедренный сустав
