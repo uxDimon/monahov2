@@ -1,7 +1,10 @@
 .doctor {
-	position: relative;
+	width: var(--content-max-weight);
+	margin: 0 auto;
 	margin-top: -83px;
 	margin-bottom: 200px;
+	background: url(../images/icons/points.svg) no-repeat;
+	background-position: 100% 137px;
 
 	&::after {
 		position: absolute;
@@ -13,14 +16,6 @@
 		content: "";
 		background-color: $color-active-05;
 	}
-}
-
-.doctor__icon-points {
-	position: absolute;
-	top: 137px;
-	left: calc(50% + 545px);
-	width: 135px;
-	height: 90px;
 }
 
 .doctor__avatar {

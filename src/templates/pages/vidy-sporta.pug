@@ -1,0 +1,66 @@
+extends ../template
+
+block variables
+    - var title = 'Направления'
+
+block content
+    main
+        .head-pages
+            .head-pages__bread-crumbs.bread-crumbs 
+                a(href="/").bread-crumbs__linc Главная
+                span.bread-crumbs__linc.bread-crumbs__your-place Виды спорта
+            h1.heading-2.head-pages__heading Виды спорта
+            nav.head-pages__manu
+                ul.head-pages__manu-list
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Горнолыжный спорт
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Хоккей
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Скалолазание и альпинизм
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Лёгкая атлетика
+                    .head-pages__manu-item-border
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Тяжёлая атлетика
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Фигурное катание
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Балет
+                    li.head-pages__manu-item
+                        a(href="#").head-pages__manu-linc Единоборства
+        
+        .disease-main-category.main-grid
+            .disease-main-category__item
+                .disease-main-category__img-wrap
+                    img(src="assets/images/napr-legs-min.jpg", alt="Коленный сустав", srcset="assets/images/napr-legs@2x-min.jpg 2x").disease-main-category__item-img
+                    .disease-main-category__item-organ Коленный сустав
+                    .disease-main-category__item-wrap
+                        h3.disease-main-category__item-treatment-h Лечение повреждённого мениска
+                        span.disease-main-category__item-treatment Диагностика и подбор способа лечения
+                        a(href="#").button.button_clear.button_clear_wheat Подробнее
+            .disease-main-category__item
+                .disease-main-category__img-wrap
+                    img(src="assets/images/napr-massage-min.jpg", alt="Спортивный массаж", srcset="assets/images/napr-massage@2x-min.jpg 2x").disease-main-category__item-img
+                    .disease-main-category__item-organ Плечевой сустав
+                    .disease-main-category__item-wrap
+                        h3.disease-main-category__item-treatment-h Спортивный массаж
+                        span.disease-main-category__item-treatment Лечение миалгии
+                        a(href="#").button.button_clear.button_clear_wheat Подробнее
+                span.disease-main-category__item-poles Безоперативные методы в приоритете
+            .disease-main-category__item
+                .disease-main-category__img-wrap
+                    img(src="assets/images/napr-knee-min.jpg", alt="Лечение повреждённого мениска", srcset="assets/images/napr-knee@2x-min.jpg 2x").disease-main-category__item-img
+                    .disease-main-category__item-wrap
+                        h3.disease-main-category__item-treatment-h Лечение повреждённого мениска
+                        span.disease-main-category__item-treatment Диагностика и подбор способа лечения
+                        a(href="#").button.button_clear.button_clear_wheat Подробнее
+                span.disease-main-category__item-poles Современное оборудование
+            .disease-main-category__item
+                .disease-main-category__img-wrap
+                    img(src="assets/images/napr-shoulder-min.jpg", alt="Кинезиотейпирование", srcset="assets/images/napr-shoulder@2x-min.jpg 2x").disease-main-category__item-img
+                    .disease-main-category__item-organ Плечевой сустав
+                    .disease-main-category__item-wrap
+                        h3.disease-main-category__item-treatment-h Кинезиотейпирование
+                        a(href="#").button.button_clear.button_clear_wheat Подробнее
+                span.disease-main-category__item-poles Внимание к деталям
