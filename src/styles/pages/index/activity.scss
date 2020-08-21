@@ -12,7 +12,7 @@
 }
 
 .activity__card {
-	background-color: var(--color-active-05);
+	background-color: $color-active-05;
 	display: flex;
 	justify-content: space-between;
 	grid-column-end: span 6;

@@ -1,19 +1,29 @@
 :root {
 	// Цвета
-	--color-text-main: #000;
-	--color-grey: #fafafa;
-	--color-white: #fff;
-	--color-active: #0060a0;
-	--color-active-05: rgba(62, 178, 255, 0.05);
-	--color-active-light: rgba(0, 96, 160, 0.5);
-	--color-hover: #0076c4;
-	--color-25: rgba(0, 0, 0, 0.25);
+	// --color-text-main: #000;
+	// --color-grey: #fafafa;
+	// --color-white: #fff;
+	// --color-active: #0060a0;
+	// --color-active-05: rgba(62, 178, 255, 0.05);
+	// --color-active-light: rgba(0, 96, 160, 0.5);
+	// --color-hover: #0076c4;
+	// --color-25: rgba(0, 0, 0, 0.25);
 
 	// Размеры
 	--content-max-weight: 1360px;
 	--grid-columns-number: 12;
 	--grid-columns-weight: 95px;
 }
+
+// Цвета
+$color-text-main: #000;
+$color-grey: #fafafa;
+$color-white: #fff;
+$color-active: #0060a0;
+$color-active-05: rgba(62, 178, 255, 0.05);
+$color-active-light: rgba(0, 96, 160, 0.5);
+$color-hover: #0076c4;
+$color-25: rgba(0, 0, 0, 0.25);
 
 @import "./common/fonts.scss";
 @import "./common/tiny-slider.scss";
@@ -26,7 +36,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	color: var(--color-text-main);
+	color: $color-text-main;
 	font-family: "Spectral", serif;
 	font-size: 16px;
 	font-weight: normal;
@@ -38,10 +48,10 @@ body {
 
 a {
 	transition: color 150ms ease-in-out 0ms;
-	color: var(--color-active);
+	color: $color-active;
 
 	&:hover {
-		color: var(--color-hover);
+		color: $color-hover;
 	}
 }
 
@@ -61,7 +71,7 @@ a {
 }
 
 .text-color-white {
-	color: var(--color-white);
+	color: $color-white;
 }
 
 // Иконки
@@ -82,18 +92,18 @@ a {
 .link-main {
 	transition: color 150ms ease-in-out 0ms;
 	text-decoration: none;
-	color: var(--color-text-main);
+	color: $color-text-main;
 
 	svg {
 		transition: fill 150ms ease-in-out 0ms;
-		fill: var(--color-text-main);
+		fill: $color-text-main;
 	}
 
 	&:hover {
-		color: var(--color-active);
+		color: $color-active;
 
 		svg {
-			fill: var(--color-active);
+			fill: $color-active;
 		}
 	}
 }
@@ -107,11 +117,11 @@ a {
 	text-decoration: none;
 	letter-spacing: 0.0015em;
 	text-transform: uppercase;
-	color: var(--color-white);
+	color: $color-white;
 	cursor: pointer;
 	border: 0;
 	border-radius: 5px;
-	background-color: var(--color-active);
+	background-color: $color-active;
 	font-family: "Cera Pro";
 	font-size: 16px;
 	font-weight: bold;
@@ -122,14 +132,14 @@ a {
 		content: "";
 		transition: background-color 150ms ease-in-out 0ms;
 		margin-left: 10px;
-		background-color: var(--color-white);
+		background-color: $color-white;
 		mask: url("../images/icons/arrow.svg") no-repeat;
 		width: 22px;
 		height: 8px;
 	}
 
 	&:hover {
-		background-color: var(--color-hover);
+		background-color: $color-hover;
 	}
 }
 
@@ -137,43 +147,43 @@ a {
 	padding: 0;
 	background-color: transparent;
 	border-radius: 0;
-	color: var(--color-text-main);
+	color: $color-text-main;
 
 	&::after {
-		background-color: var(--color-text-main);
+		background-color: $color-text-main;
 	}
 
 	&:hover {
 		background-color: transparent;
-		color: var(--color-active);
+		color: $color-active;
 
 		&::after {
-			background-color: var(--color-active);
+			background-color: $color-active;
 		}
 	}
 }
 
 .button_clear_blue {
-	color: var(--color-active);
+	color: $color-active;
 
 	&::after {
-		background-color: var(--color-active);
+		background-color: $color-active;
 	}
 
 	&:hover {
-		color: var(--color-hover);
+		color: $color-hover;
 
 		&::after {
-			background-color: var(--color-hover);
+			background-color: $color-hover;
 		}
 	}
 }
 
 .button_clear_wheat {
-	color: var(--color-white);
+	color: $color-white;
 
 	&::after {
-		background-color: var(--color-white);
+		background-color: $color-white;
 	}
 
 	&:hover {
@@ -190,7 +200,7 @@ a {
 	margin-top: 46px;
 
 	button {
-		background-color: var(--color-active-light);
+		background-color: $color-active-light;
 		border: none;
 		margin: 0 15px 0 0;
 		padding: 0;
@@ -200,7 +210,7 @@ a {
 	}
 
 	.tns-nav-active {
-		background-color: var(--color-active);
+		background-color: $color-active;
 	}
 }
 
@@ -226,7 +236,7 @@ a {
 		height: $button-height;
 		mask: url("../images/icons/arrow.svg") no-repeat;
 		mask-size: $button-width $button-height;
-		background-color: var(--color-text-main);
+		background-color: $color-text-main;
 	}
 
 	button[data-controls="prev"]::before {
