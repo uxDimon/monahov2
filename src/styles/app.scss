@@ -114,6 +114,16 @@ a {
 	line-height: 20px;
 	align-items: center;
 
+	&::after {
+		content: "";
+		transition: background-color 150ms ease-in-out 0ms;
+		margin-left: 10px;
+		background-color: var(--color-white);
+		mask: url("../images/icons/arrow.svg") no-repeat;
+		width: 22px;
+		height: 8px;
+	}
+
 	&:hover {
 		background-color: var(--color-hover);
 	}
@@ -125,16 +135,16 @@ a {
 	border-radius: 0;
 	color: var(--color-text-main);
 
-	.button__icons-arrow {
-		fill: var(--color-text-main);
+	&::after {
+		background-color: var(--color-text-main);
 	}
 
 	&:hover {
 		background-color: transparent;
 		color: var(--color-active);
 
-		.button__icons-arrow {
-			fill: var(--color-active);
+		&::after {
+			background-color: var(--color-active);
 		}
 	}
 }
@@ -142,23 +152,17 @@ a {
 .button_clear_blue {
 	color: var(--color-active);
 
-	.button__icons-arrow {
-		fill: var(--color-active);
+	&::after {
+		background-color: var(--color-active);
 	}
 
 	&:hover {
 		color: var(--color-hover);
 
-		.button__icons-arrow {
-			fill: var(--color-hover);
+		&::after {
+			background-color: var(--color-hover);
 		}
 	}
-}
-
-.button__icons-arrow {
-	transition: fill 150ms ease-in-out 0ms;
-	margin-left: 10px;
-	fill: var(--color-white);
 }
 
 // Слайдер

@@ -65,7 +65,8 @@
 
 	&[type="textarea"] {
 		resize: vertical;
-		height: 43px;
+		min-height: 43px;
+		max-height: 400px;
 	}
 }
 
