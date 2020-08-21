@@ -240,6 +240,26 @@ a {
 	}
 }
 
+.map {
+	list-style: none;
+	font-size: 20px;
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+}
+
+.map-logo {
+	display: block;
+	padding: 40px;
+}
+
 @import "./common/header.scss";
 @import "./common/head-pages.scss";
 
