@@ -1,0 +1,72 @@
+.injury {
+	overflow: hidden;
+	width: 100%;
+	min-height: 452px;
+	margin-bottom: 200px;
+}
+
+.injury__text-wrap {
+	font-size: 20px;
+	grid-column: 1 / span 4;
+}
+
+.injury__heading {
+	margin: 0 0 20px 0;
+}
+
+.injury__text-list {
+	margin: 0 0 40px 0;
+	padding: 0%;
+	list-style: none;
+}
+
+.injury__text-list-item {
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		content: "— ";
+	}
+}
+
+.injury__text {
+	margin: 0;
+}
+
+.injury__slider-wrap {
+	position: relative;
+	grid-column: 6 / span 7;
+
+	.tns-outer {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.injury__slider-item {
+	position: relative;
+}
+
+.injury__slider-text {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	left: 0;
+	text-align: center;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
+}
+
+.about-doctor__tab-container {
+	display: none;
+}
+
+.tab-container-active {
+	display: block;
+}

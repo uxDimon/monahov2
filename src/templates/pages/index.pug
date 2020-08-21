@@ -1,0 +1,258 @@
+extends ../template
+
+block variables
+    - var title = 'Главная'
+
+block content
+    //- img(src="assets/images/man.png", alt="")
+    main
+        article.doctor.main-grid
+            svg.doctor__icon-points
+                use(xlink:href="img/sprite_icons.svg#points" xmlns:xlink="http://www.w3.org/1999/xlink")
+
+            .doctor__avatar
+                img(src="img/doctor-min.jpg", alt="Монахов Вячеслав Валерьевич", srcset="img/doctor@2x-min.jpg 2x").doctor__avatar-img
+                span.doctor__avatar-name Монахов<br> Вячеслав<br> Валерьевич
+
+            .doctor__info
+                h1.doctor__info-text Врач ортопед-травматолог высшей категории, артроскопический хирург 
+
+                .doctor__info-achive-wrap
+                    .doctor__info-achive.achievements
+                        span.achievements__number 7 348
+                        span.achievements__text Операций
+                    .doctor__info-achive.achievements
+                        span.achievements__number 25
+                        span.achievements__text Лет работы
+                    .doctor__info-achive.achievements
+                        span.achievements__number 49
+                        span.achievements__text Публикации
+
+                .doctor__info-button-wrap
+                    button(href="#").button Записаться на приём
+                        svg.icons-arrow.button__icons-arrow
+                            use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    a(href="#").button.button_clear Все услуги
+                        svg.icons-arrow.button__icons-arrow
+                            use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+
+        article.activity
+            h2.heading-2.activity__heading Направления деятельности
+            
+            .activity__card-wrap.main-grid
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Локтевой сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear.button_clear_blue Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-hand-min.png", alt="Локтевой сустав", srcset="img/activity-hand@2x-min.png 2x").doctor__avatar-img
+                
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Голеностопный сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear.button_clear_blue Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-foot-min.png", alt="Голеностопный сустав", srcset="img/activity-foot@2x-min.png 2x").doctor__avatar-img
+                
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Коленный сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear.button_clear_blue Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-knee-min.png", alt="Коленный сустав", srcset="img/activity-knee@2x-min.png 2x").doctor__avatar-img
+                
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Плечевой сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear.button_clear_blue Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-shoulder-min.png", alt="Плечевой сустав", srcset="img/activity-shoulder@2x-min.png 2x").doctor__avatar-img
+
+            .activity__button-wrap
+                a(href="#").button.button_clear Все направления
+                    svg.icons-arrow.button__icons-arrow
+                        use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+        
+        article.injury.main-grid
+            .injury__text-wrap
+                h2.heading-2.injury__heading Спортивные травмы
+                ul.injury__text-list
+                    li.injury__text-list-item Контроль реабилитации и восстановительного периода
+                    li.injury__text-list-item Предотвращение травм
+                    li.injury__text-list-item Профилактика спортивных травм
+                p.injury__text Все виды лечения подразумевают динамический контроль пациента (спортсмена) для возвращения в полноценную физическую и спортивную нагрузку.
+
+            .injury__slider-wrap
+                .injury__slider
+                    .injury__slider-item
+                        img(src="img/weightlifting-min.jpg", alt="Тяжёлая атлетика", srcset="img/weightlifting@2x-min.jpg 2x").injury__slider-img
+                        span.injury__slider-text.text-color-white Тяжёлая атлетика
+                    .injury__slider-item
+                        img(src="img/figure-skating-min.jpg", alt="Фигурное катание", srcset="img/figure-skating@2x-min.jpg 2x").injury__slider-img
+                        span.injury__slider-text Фигурное катание
+                    .injury__slider-item
+                        img(src="img/skiing-min.jpg", alt="Горнолыжный спорт", srcset="img/skiing@2x-min.jpg 2x").injury__slider-img
+                        span.injury__slider-text Горнолыжный спорт
+
+        article.about-doctor.main-grid
+            img(src="img/doctor-min.jpg", alt="Монахов Вячеслав Валерьевич", srcset="img/doctor@2x-min.jpg 2x").about-doctor__img
+
+            .about-doctor__text-wrap
+                h2.heading-2.about-doctor__heading Монахов Вячеслав Валерьевич
+                p.about-doctor__text Специализируется на лечении спортивных и балетных травм. Проводит артроскопические операции при повреждениях менисков и суставного хряща, при повреждениях передней и задней крестообразной связки, при нестабильности связок надколенника, артроскопические операции на голеностопном и плечевых суставах, консервативное лечение всех хронических состояний, вызванных перегрузкой в спорте, ведёт динамическое наблюдение спортсменов в период игрового сезона и период подготовки к соревнованиям.
+                .about-doctor__icon-wrap
+                    .about-doctor__icon-item
+                        svg.about-doctor__icon
+                            use(xlink:href="img/sprite_icons.svg#time" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        span.about-doctor__icon-text Стаж 25 лет
+                    .about-doctor__icon-item
+                        svg.about-doctor__icon
+                            use(xlink:href="img/sprite_icons.svg#plus" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        span.about-doctor__icon-text 7 348 операций
+                    .about-doctor__icon-item
+                        svg.about-doctor__icon
+                            use(xlink:href="img/sprite_icons.svg#doctor" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        span.about-doctor__icon-text Заместитель главного врача по медицинской части
+                    .about-doctor__icon-item
+                        svg.about-doctor__icon
+                            use(xlink:href="img/sprite_icons.svg#document" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        span.about-doctor__icon-text Обладатель 
+                            a(href="#") сертификатов
+                    .about-doctor__icon-item
+                        svg.about-doctor__icon
+                            use(xlink:href="img/sprite_icons.svg#ball" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        span.about-doctor__icon-text Спортивные и балетные травмы
+                    .about-doctor__icon-item
+                        svg.about-doctor__icon
+                            use(xlink:href="img/sprite_icons.svg#pen" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        span.about-doctor__icon-text Автор 44 публикаций
+
+
+            .about-doctor__tab-wtap
+                .about-doctor__tab-button-wrap
+                    button(value='tab-education').about-doctor__tab-button.tab-button-active Образование
+                    button(value='tab-job').about-doctor__tab-button Опыт работы
+                    button(value='tab-scientific').about-doctor__tab-button Научная деятельность 
+                    button(value='tab-certificates').about-doctor__tab-button Сертификаты
+
+                .about-doctor__tab-container-wrap
+                    .about-doctor__tab-container#tab-education.tab-container-active
+                        table.tab-education__table
+                            tbody
+                                tr
+                                    td.tab-education__table-date 1995
+                                    td.tab-education__table-place Лечебное дело 
+                                        span Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова
+                                    td.tab-education__table-education Базовое образование
+                                tr
+                                    td.tab-education__table-date 1996
+                                    td.tab-education__table-place Травматология и ортопедия 
+                                        span Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова
+                                    td.tab-education__table-education Интернатура
+                                tr
+                                    td.tab-education__table-date 1998
+                                    td.tab-education__table-place Травматология и ортопедия 
+                                        span Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова
+                                    td.tab-education__table-education Ординатура
+                                tr
+                                    td.tab-education__table-date 2018
+                                    td.tab-education__table-place Травматология и ортопедия 
+                                        span Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова
+                                    td.tab-education__table-education Повышение квалификации
+
+                    .about-doctor__tab-container#tab-job Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere sequi velit nemo cupiditate molestiae. Itaque aperiam dignissimos, officia reprehenderit maiores, nulla suscipit quas ratione saepe, deserunt consequatur velit eos sunt?
+                    .about-doctor__tab-container#tab-scientific Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis architecto sunt, in alias repellat ipsam placeat, voluptatem numquam, eius non quibusdam dolore quam dolores dignissimos quidem praesentium facere debitis? Natus.
+                    .about-doctor__tab-container#tab-certificates Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis repellat excepturi nostrum deserunt provident nemo numquam? Ab eveniet atque, natus velit amet sed explicabo at libero facilis hic, consequuntur harum.Neque corporis vitae, modi mollitia tenetur necessitatibus culpa blanditiis aspernatur ex est harum debitis odit voluptates fugiat. Quae numquam fuga voluptates cum nobis, ipsam nihil corporis autem quaerat maxime beatae!
+
+        article.how-working
+            h2.heading-2.how-working__heading Как мы работаем
+            .how-working__slider-wrap
+                .how-working__slider
+                    .how-working__slider-item-wrap
+                        .how-working__slider-item
+                            span.how-working__slider-number 01
+                            h3.heading-3.how-working__slider-heading Консультация
+                            p.how-working__slider-text Консультации и осмотры пациентов по профилю специальности (спортивные травмы и заболевания опорно-двигательной системы), современные методы консервативного лечения по последним международным стандартам, применяемым в самых известных клиниках мира.
+                            a(href="#").button.button_clear.button_clear_blue Подробнее
+                                svg.icons-arrow.button__icons-arrow
+                                    use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    .how-working__slider-item-wrap
+                        .how-working__slider-item
+                            span.how-working__slider-number 02
+                            h3.heading-3.how-working__slider-heading Осмотр
+                            p.how-working__slider-text Консультации и осмотры пациентов по профилю специальности (спортивные травмы и заболевания опорно-двигательной системы), современные методы консервативного лечения по последним международным стандартам, применяемым в самых известных клиниках мира.
+                            a(href="#").button.button_clear.button_clear_blue Подробнее
+                                svg.icons-arrow.button__icons-arrow
+                                    use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    .how-working__slider-item-wrap
+                        .how-working__slider-item
+                            span.how-working__slider-number 03
+                            h3.heading-3.how-working__slider-heading Лечение
+                            p.how-working__slider-text Консультации и осмотры пациентов по профилю специальности (спортивные травмы и заболевания опорно-двигательной системы), современные методы консервативного лечения по последним международным стандартам, применяемым в самых известных клиниках мира.
+                            a(href="#").button.button_clear.button_clear_blue Подробнее
+                                svg.icons-arrow.button__icons-arrow
+                                    use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    .how-working__slider-item-wrap
+                        .how-working__slider-item
+                            span.how-working__slider-number 04
+                            h3.heading-3.how-working__slider-heading Профилактика
+                            p.how-working__slider-text Консультации и осмотры пациентов по профилю специальности (спортивные травмы и заболевания опорно-двигательной системы), современные методы консервативного лечения по последним международным стандартам, применяемым в самых известных клиниках мира.
+                            a(href="#").button.button_clear.button_clear_blue Подробнее
+                                svg.icons-arrow.button__icons-arrow
+                                    use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+        article.reviews
+            h2.heading-2.reviews__heading Как мы работаем
+            .reviews__slider-wrap
+                .reviews__slider
+                    .reviews__slider-item-wrap
+                        .reviews__slider-item
+                            span.reviews__slider-name Марина, 26 лет
+                            span.reviews__slider-disease Лечила коленный сустав
+                            p.reviews__slider-text Очень приятный, замечательный доктор. Мне очень понравилось, как он выслушал, как осмотрел. Его рекомендации показались мне совершенно логичными. Я получила направление на обследование. В целом, меня устроил первичный прием и я точно знаю, что приду к Вячеславу Валерьевичу снова.
+                            .reviews__slider-date-wrap
+                                span.reviews__slider-date 06.11.2018
+                                span.reviews__slider-target Источник: колл-центр
+                    .reviews__slider-item-wrap
+                        .reviews__slider-item
+                            span.reviews__slider-name Марина, 26 лет
+                            span.reviews__slider-disease Лечила коленный сустав
+                            p.reviews__slider-text Очень приятный, замечательный доктор. Мне очень понравилось, как он выслушал, как осмотрел. Его рекомендации показались мне совершенно логичными. Я получила направление на обследование. В целом, меня устроил первичный прием и я точно знаю, что приду к Вячеславу Валерьевичу снова.
+                            .reviews__slider-date-wrap
+                                span.reviews__slider-date 06.11.2018
+                                span.reviews__slider-target Источник: колл-центр
+                    .reviews__slider-item-wrap
+                        .reviews__slider-item
+                            span.reviews__slider-name Марина, 26 лет
+                            span.reviews__slider-disease Лечила коленный сустав
+                            p.reviews__slider-text Очень приятный, замечательный доктор. Мне очень понравилось, как он выслушал, как осмотрел. Его рекомендации показались мне совершенно логичными. Я получила направление на обследование. В целом, меня устроил первичный прием и я точно знаю, что приду к Вячеславу Валерьевичу снова.
+                            .reviews__slider-date-wrap
+                                span.reviews__slider-date 06.11.2018
+                                span.reviews__slider-target Источник: колл-центр
+                    .reviews__slider-item-wrap
+                        .reviews__slider-item
+                            span.reviews__slider-name Марина, 26 лет
+                            span.reviews__slider-disease Лечила коленный сустав
+                            p.reviews__slider-text Очень приятный, замечательный доктор. Мне очень понравилось, как он выслушал, как осмотрел. Его рекомендации показались мне совершенно логичными. Я получила направление на обследование. В целом, меня устроил первичный прием и я точно знаю, что приду к Вячеславу Валерьевичу снова.
+                            .reviews__slider-date-wrap
+                                span.reviews__slider-date 06.11.2018
+                                span.reviews__slider-target Источник: колл-центр
+                    .reviews__slider-item-wrap
+                        .reviews__slider-item
+                            span.reviews__slider-name Марина, 26 лет
+                            span.reviews__slider-disease Лечила коленный сустав
+                            p.reviews__slider-text Очень приятный, замечательный доктор. Мне очень понравилось, как он выслушал, как осмотрел. Его рекомендации показались мне совершенно логичными. Я получила направление на обследование. В целом, меня устроил первичный прием и я точно знаю, что приду к Вячеславу Валерьевичу снова.
+                            .reviews__slider-date-wrap
+                                span.reviews__slider-date 06.11.2018
+                                span.reviews__slider-target Источник: колл-центр
+            .reviews__button
+                a(href="#").button.button_clear.button_clear_blue Оставить отзыв
+                    svg.icons-arrow.button__icons-arrow
+                        use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")

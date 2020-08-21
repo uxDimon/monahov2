@@ -1,0 +1,53 @@
+.reviews {
+	width: var(--content-max-weight);
+	margin: 0 auto;
+	margin-bottom: 166px;
+}
+
+.reviews__slider {
+}
+
+.reviews__slider-wrap .tns-ovh {
+	overflow: visible;
+}
+
+.reviews__slider-item {
+	display: flex;
+	flex-direction: column;
+	width: 555px;
+	padding: 30px 40px;
+	background-color: var(--color-active-05);
+}
+
+.reviews__slider-name {
+	margin: 0 0 10px 0;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
+}
+
+.reviews__slider-disease {
+	margin: 0 0 10px 0;
+	color: var(--color-active);
+}
+
+.reviews__slider-text {
+	margin: 0 0 20px 0;
+}
+
+.reviews__slider-date-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews__slider-date,
+.reviews__slider-target {
+	font-weight: 200;
+}
+
+.reviews__button {
+	display: flex;
+	margin-top: -20px;
+	justify-content: flex-end;
+}

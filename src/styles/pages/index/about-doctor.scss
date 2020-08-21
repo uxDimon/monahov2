@@ -1,0 +1,124 @@
+.about-doctor {
+	margin-bottom: 200px;
+}
+
+.about-doctor__img {
+	width: 454px;
+	height: 603px;
+	transform: scaleX(-1);
+	grid-column: 1 / span 5;
+	object-fit: cover;
+}
+
+.about-doctor__text-wrap {
+	grid-column: 6 / span 7;
+}
+
+.about-doctor__heading {
+	margin: 0 0 20px;
+}
+
+.about-doctor__text {
+	margin: 0;
+	font-size: 20px;
+}
+
+.about-doctor__icon-wrap {
+	display: grid;
+	margin-top: 60px;
+	grid-template-columns: 1fr 0.7fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 60px;
+}
+
+.about-doctor__icon-item {
+	display: flex;
+	align-items: center;
+}
+
+.about-doctor__icon {
+	width: 42px;
+	height: 36px;
+	margin-right: 20px;
+	flex-shrink: 0;
+}
+
+.about-doctor__icon-text {
+	font-family: "Cera Pro", sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 25px;
+}
+
+.about-doctor__tab-wtap {
+	margin-top: 100px;
+	grid-column: 1 / span var(--grid-columns-number);
+}
+
+.about-doctor__tab-button-wrap {
+	display: flex;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid var(--color-active-light);
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-doctor__tab-button {
+	//FIXME: hover
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	letter-spacing: 0.0015em;
+	border: none;
+	background-color: transparent;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 25px;
+	transition: colro 250ms ease-in-out 0ms;
+
+	&:hover {
+		color: var(--color-active);
+	}
+}
+
+.tab-button-active {
+	font-weight: bold;
+}
+
+.tab-education__table {
+	width: 100%;
+
+	td {
+		padding-bottom: 20px;
+		vertical-align: bottom;
+	}
+}
+
+.tab-education__table-date {
+	padding-right: 80px;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
+}
+
+.tab-education__table-place {
+	color: var(--color-active);
+
+	span {
+		display: block;
+		color: var(--color-text-main);
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 150%;
+	}
+}
+
+.tab-education__table-education {
+	text-align: right;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 150%;
+}

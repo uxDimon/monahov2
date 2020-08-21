@@ -1,0 +1,192 @@
+:root {
+	// Цвета
+	--color-text-main: #000;
+	--color-grey: #fafafa;
+	--color-white: #fff;
+	--color-active: #0060a0;
+	--color-active-05: rgba(62, 178, 255, 0.05);
+	--color-active-light: rgba(0, 96, 160, 0.5);
+	--color-hover: #0076c4;
+	--color-25: rgba(0, 0, 0, 0.25);
+
+	// Размеры
+	--content-max-weight: 1360px;
+	--grid-columns-number: 12;
+	--grid-columns-weight: 95px;
+}
+
+@import "./common/fonts.scss";
+
+* {
+	box-sizing: border-box;
+	outline-offset: 2px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--color-text-main);
+	font-family: "Spectral", serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 150%;
+
+	overflow-x: hidden;
+}
+
+a {
+	transition: color 150ms ease-in-out 0ms;
+	color: var(--color-active);
+}
+
+// Заголовки
+.heading-2 {
+	font-family: "Cera Pro", serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 60px;
+}
+
+.heading-3 {
+	font-family: "Cera Pro", serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 135%;
+}
+
+.text-color-white {
+	color: var(--color-white);
+}
+
+// Иконки
+.icons-arrow {
+	width: 22px;
+	height: 8px;
+}
+
+// Гриды
+.main-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--grid-columns-number), var(--grid-columns-weight));
+	grid-column-gap: 20px;
+	justify-content: center;
+}
+
+// Анимация
+.link-main {
+	transition: color 150ms ease-in-out 0ms;
+	text-decoration: none;
+	color: var(--color-text-main);
+
+	svg {
+		transition: fill 150ms ease-in-out 0ms;
+		fill: var(--color-text-main);
+	}
+
+	&:hover {
+		color: var(--color-active);
+
+		svg {
+			fill: var(--color-active);
+		}
+	}
+}
+
+// Кнопки
+.button {
+	display: inline-flex;
+	padding: 10px 25px;
+	transition: 150ms ease-in-out 0ms;
+	transition-property: color, background-color;
+	text-decoration: none;
+	letter-spacing: 0.0015em;
+	text-transform: uppercase;
+	color: var(--color-white);
+	cursor: pointer;
+	border: 0;
+	border-radius: 5px;
+	background-color: var(--color-active);
+	font-family: "Cera Pro";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	align-items: center;
+
+	&:hover {
+		background-color: var(--color-hover);
+	}
+}
+
+.button_clear {
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+	color: var(--color-text-main);
+
+	.button__icons-arrow {
+		fill: var(--color-text-main);
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: var(--color-active);
+
+		.button__icons-arrow {
+			fill: var(--color-active);
+		}
+	}
+}
+
+.button_clear_blue {
+	color: var(--color-active);
+
+	.button__icons-arrow {
+		fill: var(--color-active);
+	}
+
+	&:hover {
+		color: var(--color-hover);
+
+		.button__icons-arrow {
+			fill: var(--color-hover);
+		}
+	}
+}
+
+.button__icons-arrow {
+	transition: fill 150ms ease-in-out 0ms;
+	margin-left: 10px;
+	fill: var(--color-white);
+}
+
+// Слайдер
+.tns-nav {
+	margin-top: 46px;
+
+	button {
+		background-color: var(--color-active-light);
+		border: none;
+		margin: 0 15px 0 0;
+		padding: 0;
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+	}
+
+	.tns-nav-active {
+		background-color: var(--color-active);
+	}
+}
+
+@import "./common/header.scss";
+
+@import "./pages/index/doctor.scss";
+@import "./pages/index/activity.scss";
+@import "./pages/index/injury.scss";
+@import "./pages/index/about-doctor.scss";
+@import "./pages/index/how-working.scss";
+@import "./pages/index/reviews.scss";
+
+@import "./common/contact.scss";
+@import "./common/footer.scss";
