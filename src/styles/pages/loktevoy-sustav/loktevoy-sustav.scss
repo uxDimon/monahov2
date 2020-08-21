@@ -26,3 +26,43 @@
 	bottom: 40px;
 	left: 40px;
 }
+
+.loktev__text-wrap {
+	grid-column: 8 / span 4;
+	align-self: center;
+	width: calc(100% + 20px);
+	margin-left: -20px;
+}
+
+.loktev__text-item {
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.loktev__text-button {
+	margin-bottom: 10px;
+}
+
+.loktev__text-text {
+	margin: 0;
+}
+
+.loktev__poles-wrap {
+	grid-column: 1 / span 12;
+	display: flex;
+	justify-content: space-between;
+}
+
+.loktev__poles {
+	width: 284px;
+	padding-top: 10px;
+	border-top: 1px solid var(--color-active-light);
+	font-family: "Montserrat", serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
+	margin-top: 100px;
+}
