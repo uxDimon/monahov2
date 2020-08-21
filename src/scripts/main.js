@@ -1,4 +1,4 @@
-// Скрипт для бургер меню
+// Бургер меню
 const burgerButton = document.querySelectorAll(".main-manu__burger-button");
 const burgerManu = document.querySelector(".burger-manu");
 

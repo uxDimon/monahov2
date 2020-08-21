@@ -25,10 +25,16 @@
 
 .main-manu__tel-burger {
 	display: flex;
-	grid-column: 10 / span 3;
+	grid-column: 11 / span 2;
 	justify-self: end;
 	align-self: center;
 	align-items: center;
+}
+
+.main-manu__signup {
+	grid-column: 8 / span 3;
+	justify-self: start;
+	align-self: center;
 }
 
 .main-manu__tel {
