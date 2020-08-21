@@ -169,6 +169,22 @@ a {
 	}
 }
 
+.button_clear_wheat {
+	color: var(--color-white);
+
+	&::after {
+		background-color: var(--color-white);
+	}
+
+	&:hover {
+		color: #8ab8d6;
+
+		&::after {
+			background-color: #8ab8d6;
+		}
+	}
+}
+
 // Слайдер
 .tns-nav {
 	margin-top: 46px;
@@ -197,6 +213,7 @@ a {
 @import "./pages/index/about-doctor.scss";
 @import "./pages/index/how-working.scss";
 @import "./pages/index/reviews.scss";
+@import "./pages/napravleniya/napravleniya.scss";
 
 @import "./common/contact.scss";
 @import "./common/footer.scss";
