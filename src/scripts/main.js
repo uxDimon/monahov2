@@ -70,41 +70,58 @@ document.querySelectorAll(".phone-mask").forEach((item) => {
 });
 
 // Слайдер https://www.npmjs.com/package/tiny-slider
-// import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
-// import "../node_modules/tiny-slider/src/tiny-slider.scss";
 
-var injury = tns({
-	container: ".injury__slider",
-	items: 2,
-	autoWidth: true,
-	gutter: 20,
-	mouseDrag: true,
-	loop: false,
-	speed: 300,
-	controls: false,
-	nav: false,
-});
+if (document.querySelector(".injury__slider")) {
+	var injury = tns({
+		container: ".injury__slider",
+		items: 2,
+		autoWidth: true,
+		gutter: 20,
+		mouseDrag: true,
+		loop: false,
+		speed: 300,
+		controls: false,
+		nav: false,
+	});
+}
 
-var howWorking = tns({
-	container: ".how-working__slider",
-	items: 1,
-	autoWidth: true,
-	gutter: 250,
-	mouseDrag: true,
-	loop: false,
-	speed: 400,
-	controls: false,
-	navPosition: "bottom",
-});
+if (document.querySelector(".how-working__slider")) {
+	var howWorking = tns({
+		container: ".how-working__slider",
+		items: 1,
+		autoWidth: true,
+		gutter: 250,
+		mouseDrag: true,
+		loop: false,
+		speed: 400,
+		controls: false,
+		navPosition: "bottom",
+	});
+}
 
-var reviews = tns({
-	container: ".reviews__slider",
-	items: 1,
-	autoWidth: true,
-	gutter: 20,
-	mouseDrag: true,
-	loop: false,
-	speed: 350,
-	controls: false,
-	navPosition: "bottom",
-});
+if (document.querySelector(".reviews__slider")) {
+	var reviews = tns({
+		container: ".reviews__slider",
+		items: 1,
+		autoWidth: true,
+		gutter: 20,
+		mouseDrag: true,
+		loop: false,
+		speed: 350,
+		controls: false,
+		navPosition: "bottom",
+	});
+}
+
+if (document.querySelector(".disease-page__slider")) {
+	var diseasePage = tns({
+		container: ".disease-page__slider",
+		items: 1,
+		gutter: 20,
+		mouseDrag: true,
+		// loop: false,
+		speed: 350,
+		controlsText: ["", ""],
+		navPosition: "bottom",
+	});
+}
