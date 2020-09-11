@@ -40,13 +40,13 @@
 	margin: 0 0 60px 0;
 }
 
-.head-pages__manu {
+.head-pages__menu {
 	padding: 20px 0;
 	border-top: 1px solid $color-25;
 	border-bottom: 1px solid $color-25;
 }
 
-.head-pages__manu-list {
+.head-pages__menu-list {
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -55,12 +55,12 @@
 	flex-wrap: wrap;
 }
 
-.head-pages__manu-item-border {
+.head-pages__menu-item-border {
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.head-pages__manu-linc {
+.head-pages__menu-linc {
 	text-decoration: none;
 	letter-spacing: 0.0015em;
 	color: $color-text-main;
@@ -70,6 +70,6 @@
 	line-height: 25px;
 }
 
-.head-pages__manu-linc_active {
+.head-pages__menu-linc_active {
 	color: $color-active;
 }

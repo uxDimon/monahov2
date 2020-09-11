@@ -1,9 +1,11 @@
+// Размеры
 :root {
-	// Размеры
 	--content-max-weight: 1360px;
 	--grid-columns-number: 12;
 	--grid-columns-weight: 95px;
 }
+
+$main-pading: 20px;
 
 // Цвета
 $color-text-main: #000;
@@ -260,6 +262,30 @@ a {
 	padding: 40px;
 }
 
+@media screen and (max-width: 1400px) {
+	:root {
+		--content-max-weight: 100%;
+		// --grid-columns-number: 12;
+		--grid-columns-weight: 1fr;
+	}
+
+	main {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	:root {
+		--grid-columns-number: 8;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		--grid-columns-number: 4;
+	}
+}
+
 @import "./common/header.scss";
 @import "./common/head-pages.scss";
 
@@ -278,3 +304,15 @@ a {
 
 @import "./common/contact.scss";
 @import "./common/footer.scss";
+
+// @media screen and (max-width: 1400px) {
+
+// }
+
+// @media screen and (max-width: 960px) {
+
+// }
+
+// @media screen and (max-width: 768px) {
+
+// }
