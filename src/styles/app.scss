@@ -27,6 +27,7 @@ $color-25: rgba(0, 0, 0, 0.25);
 
 body {
 	overflow-x: hidden;
+	min-width: 360px;
 	margin: 0;
 	padding: 0;
 	color: $color-text-main;
@@ -35,7 +36,6 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 150%;
-	min-width: 360px;
 }
 
 a {
@@ -132,8 +132,8 @@ a {
 	}
 
 	&:hover {
-		background-color: $color-hover;
 		color: $color-white;
+		background-color: $color-hover;
 	}
 }
 
@@ -286,13 +286,23 @@ a {
 	:root {
 		--grid-columns-number: 4;
 	}
-}
 
-@media screen and (max-width: 440px) {
-	.button {
-		width: 100%;
+	.heading-2 {
+		font-size: 24px;
+		line-height: 135%;
+	}
+
+	.heading-3 {
+		font-size: 20px;
+		line-height: 135%;
 	}
 }
+
+// @media screen and (max-width: 440px) {
+// 	.button {
+// 		width: 100%;
+// 	}
+// }
 
 @import "./common/header.scss";
 @import "./common/head-pages.scss";
