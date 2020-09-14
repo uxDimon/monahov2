@@ -189,6 +189,10 @@ a {
 	}
 }
 
+a[href^="tel"] {
+	white-space: nowrap;
+}
+
 // Слайдер
 .tns-nav {
 	margin-top: 46px;

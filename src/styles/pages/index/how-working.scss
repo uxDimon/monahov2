@@ -53,22 +53,14 @@
 	margin: 0 0 20px 0;
 }
 
-// @media screen and (max-width: 1400px) {
-
-// }
-
-// @media screen and (max-width: 960px) {
-
-// }
-
 @media screen and (max-width: 768px) {
 	.how-working {
 		margin-bottom: 100px;
 	}
 
 	.how-working__slider-item-wrap {
-		opacity: 1;
 		margin-bottom: 55px;
+		opacity: 1;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -76,8 +68,8 @@
 	}
 
 	.how-working__slider-item {
-		padding: 20px 30px;
 		width: 100%;
+		padding: 20px 30px;
 	}
 
 	.how-working__slider-number {
