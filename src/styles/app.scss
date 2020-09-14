@@ -35,6 +35,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 150%;
+	min-width: 360px;
 }
 
 a {
@@ -118,6 +119,7 @@ a {
 	font-weight: bold;
 	line-height: 20px;
 	align-items: center;
+	justify-content: center;
 
 	&::after {
 		width: 22px;
@@ -283,6 +285,12 @@ a {
 @media screen and (max-width: 768px) {
 	:root {
 		--grid-columns-number: 4;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.button {
+		width: 100%;
 	}
 }
 
