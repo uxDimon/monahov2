@@ -47,6 +47,10 @@ a {
 	}
 }
 
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+
 // Заголовки
 .heading-2 {
 	font-family: "Cera Pro", serif;
