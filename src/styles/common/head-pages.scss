@@ -49,10 +49,17 @@
 .head-pages__menu-list {
 	display: flex;
 	margin: 0;
+	margin-right: -15px;
+	margin-bottom: -15px;
 	padding: 0;
 	list-style: none;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+.head-pages__menu-item {
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
 
 .head-pages__menu-item-border {
@@ -72,4 +79,28 @@
 
 .head-pages__menu-linc_active {
 	color: $color-active;
+}
+
+@media screen and (max-width: 768px) {
+	.head-pages {
+		padding-top: 40px;
+		background-position: 100% 0px;
+	}
+
+	.bread-crumbs {
+		display: none;
+	}
+
+	.head-pages__heading {
+		margin-bottom: 40px;
+	}
+
+	.head-pages__menu-item {
+		width: calc(50% - 15px);
+	}
+
+	.head-pages__menu-linc {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
