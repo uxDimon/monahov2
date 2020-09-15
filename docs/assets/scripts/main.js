@@ -1,12 +1,12 @@
 // Бургер меню
-const burgerButton = document.querySelectorAll(".main-manu__burger-button");
-const burgerManu = document.querySelector(".burger-manu");
+const burgerButton = document.querySelectorAll(".main-menu__burger-button");
+const burgerMenu = document.querySelector(".burger-menu");
 
 for (const i of burgerButton) {
 	i.addEventListener("click", () => {
-		burgerManu.classList.toggle("burger-manu__is-active");
+		burgerMenu.classList.toggle("burger-menu__is-active");
 		for (const b of burgerButton) {
-			b.classList.toggle("main-manu__burger-button-cross");
+			b.classList.toggle("main-menu__burger-button-cross");
 		}
 	});
 }
@@ -30,18 +30,6 @@ for (const i of tabsButton) {
 }
 
 // Форма
-// const allForms = document.querySelectorAll(".form-bot__form");
-// for (const f of allForms) {
-// 	f.querySelector('button[type="submit"]').addEventListener("click", () => {
-// 		for (const i of f.querySelectorAll(".form-bot__form-input[required]")) {
-// 			if ((i.value = "")) {
-// 				i.classList.add("input-invalid");
-// 			} else {
-// 				i.classList.remove("input-invalid");
-// 			}
-// 		}
-// 	});
-// }
 
 // настройка select
 const allSelect = document.querySelectorAll(".form-bot__form-select");
@@ -88,6 +76,7 @@ if (document.querySelector(".injury__slider")) {
 if (document.querySelector(".how-working__slider")) {
 	var howWorking = tns({
 		container: ".how-working__slider",
+		disable: true,
 		items: 1,
 		autoWidth: true,
 		gutter: 250,
@@ -96,12 +85,18 @@ if (document.querySelector(".how-working__slider")) {
 		speed: 400,
 		controls: false,
 		navPosition: "bottom",
+		responsive: {
+			768: {
+				disable: false,
+			},
+		},
 	});
 }
 
 if (document.querySelector(".reviews__slider")) {
 	var reviews = tns({
 		container: ".reviews__slider",
+		disable: true,
 		items: 1,
 		autoWidth: true,
 		gutter: 20,
@@ -110,6 +105,11 @@ if (document.querySelector(".reviews__slider")) {
 		speed: 350,
 		controls: false,
 		navPosition: "bottom",
+		responsive: {
+			768: {
+				disable: false,
+			},
+		},
 	});
 }
 
