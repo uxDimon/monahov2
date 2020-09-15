@@ -1,9 +1,9 @@
 .disease-main-category {
 	margin-bottom: 160px;
+	grid-row-gap: 100px;
 }
 
 .disease-main-category__item {
-	margin-bottom: 100px;
 	grid-column: 1 / span 8;
 
 	&:nth-of-type(2n) {
@@ -49,6 +49,7 @@
 	left: 40px;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 .disease-main-category__item-treatment-h {
@@ -74,4 +75,62 @@
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 135%;
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 960px) {
+	.disease-main-category__item:nth-of-type(2n),
+	.disease-main-category__item {
+		grid-column: 1 / -1;
+	}
+
+	.disease-main-category__item-img {
+		height: 480px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.disease-main-category {
+		margin-bottom: 60px;
+		grid-row-gap: 60px;
+	}
+	.disease-main-category__item {
+		margin-bottom: 60px;
+	}
+
+	.disease-main-category__item-img {
+		height: 270px;
+	}
+
+	.disease-main-category__item-organ {
+		top: 20px;
+		right: 20px;
+		left: 20px;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	.disease-main-category__item-wrap {
+		right: 20px;
+		bottom: 20px;
+		left: 20px;
+	}
+
+	.disease-main-category__item-treatment-h {
+		font-size: 18px;
+		line-height: 135%;
+	}
+
+	.disease-main-category__item-treatment {
+		display: none;
+	}
+
+	.disease-main-category__item-poles {
+		margin-top: 30px;
+		padding-top: 10px;
+		font-size: 18px;
+		line-height: 135%;
+	}
 }
