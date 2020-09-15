@@ -67,7 +67,7 @@
 
 .disease-page__text-wrap {
 	margin-left: -20px;
-	grid-column: 8 / 13;
+	grid-column: 8 / -1;
 }
 
 .disease-page__heading {
@@ -110,5 +110,61 @@
 		font-family: "Cera Pro", serif;
 		font-weight: normal;
 		line-height: 25px;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.disease-page__slider-wrap .tns-controls {
+		top: auto;
+		right: 0;
+		bottom: -16px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.disease-page__slider-wrap {
+		margin-right: 0;
+		grid-column-end: 7;
+	}
+	.disease-page__text-wrap {
+		margin-left: 0;
+		grid-column-start: 7;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.disease-page__slider-wrap,
+	.disease-page__text-wrap {
+		grid-column: 1 / -1;
+	}
+
+	.disease-page__slider-wrap {
+		margin-bottom: 50px;
+	}
+
+	.disease-page__slider-item {
+		height: 420px;
+	}
+
+	.disease-page__slider-img {
+		width: 100% !important;
+		position: static !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.disease-page {
+		margin-bottom: 100px;
+	}
+
+	.disease-page__heading {
+		margin-bottom: 15px;
+	}
+
+	.disease-page__item,
+	.disease-page__p {
+		font-size: 16px;
+		line-height: 150%;
 	}
 }
