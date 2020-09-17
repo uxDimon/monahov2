@@ -1,0 +1,15 @@
+extends ../template
+
+block variables
+    - var title = 'Главная'
+    - var contactForm = true
+
+block content
+    main
+        .head-pages
+            .head-pages__bread-crumbs.bread-crumbs 
+                a(href="/").bread-crumbs__linc Главная
+                a(href="/napravleniya.html").bread-crumbs__linc Направления
+                span.bread-crumbs__linc.bread-crumbs__your-place Локтевой сустав
+
+        include ../components/about-doctor.pug
