@@ -1,9 +1,22 @@
 .disease-page {
 	margin-bottom: 100px;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: -50vh;
+		bottom: -100px;
+		width: 50vw;
+		grid-column: 7 / -1;
+		background-color: $color-grey;
+		z-index: -1;
+	}
 }
 
 .disease-page__slider-wrap {
-	position: relative;
+	position: sticky;
+	top: 83px;
 	margin-right: -20px;
 	grid-column: 1 / 6;
 	align-self: flex-start;
@@ -131,12 +144,21 @@
 		margin-left: 0;
 		grid-column-start: 7;
 	}
+	.disease-page::before {
+		margin-left: -20px;
+	}
 }
 
 @media screen and (max-width: 960px) {
 	.disease-page__slider-wrap,
 	.disease-page__text-wrap {
 		grid-column: 1 / -1;
+		position: relative;
+		top: 0;
+	}
+
+	.disease-page::before {
+		content: none;
 	}
 
 	.disease-page__slider-wrap {
