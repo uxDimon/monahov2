@@ -128,15 +128,17 @@
 
 .burger-menu {
 	visibility: hidden;
-	transition: display 300ms ease-in-out 0ms;
-	transition-property: visibility, opacity;
+	transition: 400ms ease-in-out 0ms;
+	transition-property: visibility, opacity, transform;
 	opacity: 0;
 	z-index: 1;
+	transform: translateX(100%);
 }
 
 .burger-menu__is-active {
 	visibility: visible;
 	opacity: 1;
+	transform: translateX(0);
 }
 
 .burger-menu__wrap {
@@ -203,8 +205,9 @@
 
 	&:hover .burger-menu__drop-list,
 	&:focus-within .burger-menu__drop-list {
-		visibility: visible;
 		opacity: 1;
+		transform: translateX(0);
+		pointer-events: auto;
 	}
 }
 
@@ -231,14 +234,15 @@
 	position: absolute;
 	top: 0;
 	left: 100%;
-	visibility: hidden;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	transition: 200ms ease-in-out 50ms;
-	transition-property: opacity, visibility;
+	transition: 200ms ease-in-out 100ms;
+	transition-property: opacity, transform, pointer-events;
 	opacity: 0;
+	transform: translateX(-50%);
+	pointer-events: none;
 }
 
 .burger-menu__drop-item {
