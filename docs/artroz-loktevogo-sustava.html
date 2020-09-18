@@ -12,14 +12,17 @@
   <body>
     <div class="main-menu__indent"></div>
     <header class="main-menu main-grid"><a class="main-menu__logo link-main" href="/">Доктор <br> Монахов</a>
-      <div class="main-menu__button-tel-wrap"><a class="button main-menu__signup" href="#">Записаться на приём</a>
+      <div class="main-menu__button-tel-wrap">
+        <button class="button main-menu__signup button_sign-up">Записаться на приём</button>
         <div class="main-menu__tel-burger"><a class="main-menu__tel link-main" href="tel:+79268897716">+7 (926) 889-77-16</a>
           <button class="main-menu__burger-button"></button>
         </div>
       </div>
       <div class="main-menu__burger-menu burger-menu">
         <div class="main-grid burger-menu__wrap">
-          <div class="burger-menu__signup-wrap"><a class="burger-menu__tel link-main" href="tel:+79268897716">+7 (926) 889-77-16</a><a class="button burger-menu__signup" href="#">Записаться на приём</a></div>
+          <div class="burger-menu__signup-wrap"><a class="burger-menu__tel link-main" href="tel:+79268897716">+7 (926) 889-77-16</a>
+            <button class="button burger-menu__signup button_sign-up">Записаться на приём</button>
+          </div>
           <nav class="burger-menu__nav">
             <ul class="burger-menu__nav-list">
               <li class="burger-menu__nav-item burger-menu__nav-item-drop"><a class="link-main burger-menu__nav-item-linc" href="/napravleniya.html">Направления<img class="icons-arrow" src="assets/images/icons/arrow.svg"></a>
@@ -57,13 +60,19 @@
         <div class="disease-page__slider-wrap">
           <div class="disease-page__slider">
             <div class="disease-page__slider-item"><img class="disease-page__slider-img" src="assets/images/joint-x-ray-min.jpg" alt="Локтевой сустав" srcset="assets/images/joint-x-ray@2x-min.jpg 2x" style="width: auto; position: absolute; right: -71px;"><span class="disease-page__slider-name">Локтевой сустав</span>
-              <div class="disease-page__slider-bot-wrap"><span class="disease-page__slider-disease">Артроз</span><a class="button button_clear button_clear_wheat disease-page__slider-button" href="#">Записаться на приём</a></div>
+              <div class="disease-page__slider-bot-wrap"><span class="disease-page__slider-disease">Артроз</span>
+                <button class="button button_clear button_clear_wheat disease-page__slider-button button_sign-up">Записаться на приём</button>
+              </div>
             </div>
             <div class="disease-page__slider-item"><img class="disease-page__slider-img" src="assets/images/loktev-joint-min.jpg" alt="Артроз локтевого сустава" srcset="assets/images/loktev-joint@2x-min.jpg 2x"><span class="disease-page__slider-name">Локтевой сустав</span>
-              <div class="disease-page__slider-bot-wrap"><span class="disease-page__slider-disease">Артроз</span><a class="button button_clear button_clear_wheat disease-page__slider-button" href="#">Записаться на приём</a></div>
+              <div class="disease-page__slider-bot-wrap"><span class="disease-page__slider-disease">Артроз</span>
+                <button class="button button_clear button_clear_wheat disease-page__slider-button button_sign-up">Записаться на приём</button>
+              </div>
             </div>
             <div class="disease-page__slider-item"><img class="disease-page__slider-img" src="assets/images/joint-x-ray-min.jpg" alt="Локтевой сустав" srcset="assets/images/joint-x-ray@2x-min.jpg 2x" style="width: auto; position: absolute; right: -71px;"><span class="disease-page__slider-name">Локтевой сустав</span>
-              <div class="disease-page__slider-bot-wrap"><span class="disease-page__slider-disease">Артроз</span><a class="button button_clear button_clear_wheat disease-page__slider-button" href="#">Записаться на приём</a></div>
+              <div class="disease-page__slider-bot-wrap"><span class="disease-page__slider-disease">Артроз</span>
+                <button class="button button_clear button_clear_wheat disease-page__slider-button button_sign-up">Записаться на приём</button>
+              </div>
             </div>
           </div>
         </div>
@@ -87,6 +96,56 @@
         </div>
       </div>
     </main>
+    <div class="popup popup_sign-up">
+      <div class="popup__wrap">
+        <button class="popup__close-button"></button>
+        <h3 class="heading-3 popup__heading">Заявка на приём</h3>
+        <p class="popup__text">Мы перезвоним Вам в течении получаса</p>
+        <form class="popup__form" action="" id="sign-up-form">
+          <div class="form-bot__form-input-wrap">
+            <input class="form-bot__form-input" type="text" name="userName" placeholder="Ваше имя" required id="sign-up-userName">
+            <label class="form-bot__form-input-lable" for="sign-up-userName">Ваше имя</label>
+          </div>
+          <div class="form-bot__form-input-wrap">
+            <input class="form-bot__form-input phone-mask" type="tel" name="userPhone" placeholder="Телефон" min="1" required id="sign-up-userPhone">
+            <label class="form-bot__form-input-lable" for="sign-up-userPhone">Телефон</label>
+          </div>
+          <div class="form-bot__form-input-wrap">
+            <select class="form-bot__form-input form-bot__form-select" name="problem" id="sign-up-problem">
+              <option value="none" hidden disabled selected>Клиника</option>
+              <option value="11">Клиника Reaclinic</option>
+              <option value="12">Клиника Medalp</option>
+            </select>
+            <label class="form-bot__form-input-lable input-lable-none" for="sign-up-problem">Проблематика</label>
+          </div>
+          <p class="form-bot__form-text">Заполняя форму, вы соглашаетесь с правилами обработки персональных данных.</p>
+          <button class="button form-bot__botton" type="submit">отправить заявку</button>
+        </form>
+      </div>
+      <div class="popup__close-area"></div>
+    </div>
+    <div class="popup popup_review">
+      <div class="popup__wrap">
+        <button class="popup__close-button"></button>
+        <h3 class="heading-3 popup__heading">Отзыв</h3>
+        <form class="popup__form" action="" id="sign-up-form">
+          <div class="form-bot__form-input-wrap">
+            <input class="form-bot__form-input" type="text" name="userName" placeholder="Ваше имя и возраст (по желанию)" required id="sign-up-userName">
+            <label class="form-bot__form-input-lable" for="sign-up-userName">Ваше имя и возраст (по желанию)</label>
+          </div>
+          <div class="form-bot__form-input-wrap">
+            <input class="form-bot__form-input phone-mask" type="tel" name="userPhone" placeholder="Что лечили" min="1" required id="sign-up-userPhone">
+            <label class="form-bot__form-input-lable" for="sign-up-userPhone">Что лечили</label>
+          </div>
+          <div class="form-bot__form-input-wrap">
+            <textarea class="form-bot__form-input" type="textarea" name="message" placeholder="Ваш отзыв" id="message"></textarea>
+            <label class="form-bot__form-input-lable" for="message">Ваш отзыв</label>
+          </div>
+          <button class="button form-bot__botton" type="submit">отправить заявку</button>
+        </form>
+      </div>
+      <div class="popup__close-area"></div>
+    </div>
     <footer class="footer">
       <div class="footer__menu-wrap"><a class="footer__logo link-main" href="/">Доктор <br> Монахов</a>
         <nav class="footer__menu">

@@ -11,6 +11,30 @@ for (const i of burgerButton) {
 	});
 }
 
+// popup
+const popupReview = document.querySelector(".popup_review");
+const popupSignUp = document.querySelector(".popup_sign-up");
+
+const buttonReview = document.querySelectorAll(".button_review");
+const buttonSignUp = document.querySelectorAll(".button_sign-up");
+
+function popupOpen(popup, button) {
+	for (const b of button) {
+		b.addEventListener("click", () => {
+			popup.classList.add("popup_is-active");
+		});
+	}
+	popup.querySelector(".popup__close-area").addEventListener("click", () => {
+		popup.classList.remove("popup_is-active");
+	});
+	popup.querySelector(".popup__close-button").addEventListener("click", () => {
+		popup.classList.remove("popup_is-active");
+	});
+}
+
+popupOpen(popupSignUp, buttonSignUp);
+popupOpen(popupReview, buttonReview);
+
 // Табы
 const tabsButton = document.querySelectorAll(".about-doctor__tab-button");
 const tabsContainer = document.querySelectorAll(".about-doctor__tab-container");
