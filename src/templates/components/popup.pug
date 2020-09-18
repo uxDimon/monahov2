@@ -1,0 +1,38 @@
+.popup.popup_sign-up
+    .popup__wrap
+        button.popup__close-button
+        h3.heading-3.popup__heading Заявка на приём
+        p.popup__text Мы перезвоним Вам в течении получаса
+        form(action="")#sign-up-form.popup__form
+            .form-bot__form-input-wrap
+                input(type="text", name="userName" placeholder="Ваше имя" required)#sign-up-userName.form-bot__form-input
+                label(for="sign-up-userName").form-bot__form-input-lable Ваше имя
+            .form-bot__form-input-wrap
+                input(type="tel", name="userPhone" placeholder="Телефон" min="1" required)#sign-up-userPhone.form-bot__form-input.phone-mask
+                label(for="sign-up-userPhone").form-bot__form-input-lable Телефон
+            .form-bot__form-input-wrap
+                select(name="problem")#sign-up-problem.form-bot__form-input.form-bot__form-select
+                    option(value="none" hidden disabled selected) Клиника
+                    option(value="11") Клиника Reaclinic
+                    option(value="12") Клиника Medalp
+                label(for="sign-up-problem").form-bot__form-input-lable.input-lable-none Проблематика
+            p.form-bot__form-text Заполняя форму, вы соглашаетесь с правилами обработки персональных данных.
+            button(type="submit").button.form-bot__botton отправить заявку
+    .popup__close-area
+
+.popup.popup_review
+    .popup__wrap
+        button.popup__close-button
+        h3.heading-3.popup__heading Отзыв
+        form(action="")#sign-up-form.popup__form
+            .form-bot__form-input-wrap
+                input(type="text", name="userName" placeholder="Ваше имя и возраст (по желанию)" required)#sign-up-userName.form-bot__form-input
+                label(for="sign-up-userName").form-bot__form-input-lable Ваше имя и возраст (по желанию)
+            .form-bot__form-input-wrap
+                input(type="tel", name="userPhone" placeholder="Что лечили" min="1" required)#sign-up-userPhone.form-bot__form-input.phone-mask
+                label(for="sign-up-userPhone").form-bot__form-input-lable Что лечили
+            .form-bot__form-input-wrap
+                textarea(type="textarea", name="message" placeholder="Ваш отзыв")#message.form-bot__form-input
+                label(for="message").form-bot__form-input-lable Ваш отзыв
+            button(type="submit").button.form-bot__botton отправить заявку
+    .popup__close-area
